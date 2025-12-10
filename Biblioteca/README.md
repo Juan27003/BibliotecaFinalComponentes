@@ -172,9 +172,14 @@ CREATE TABLE prestamos (
 INSERT INTO roles (nombre) VALUES ('ADMIN');
 INSERT INTO roles (nombre) VALUES ('USUARIO');
 
+--Rol administrador
+INSERT INTO usuarios (email,password,nombre,rol_id) VALUES ('admin@admin.com','admin123','Administrador', 1)
+
 COMMIT;
 
 
 Link de Documentacion de EndPoints Swagger
 
 http://localhost:8080/api/swagger-ui/swagger-ui/index.html#/
+
+
