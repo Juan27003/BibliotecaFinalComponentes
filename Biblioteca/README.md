@@ -4,6 +4,30 @@ Descripción del Proyecto
 El Sistema de Biblioteca Digital es una aplicación web desarrollada con Spring Boot para la gestión de usuarios, libros y préstamos. Utiliza autenticación segura mediante JWT y control de acceso basado en roles (ADMIN y USUARIO).
 El sistema trabaja con DTOs, validaciones, manejo de excepciones personalizado y arquitectura en capas (controladores, servicios, repositorios).
 
+Instalación y Ejecución
+
+Clonar repositorio
+
+Abre IntelliJ IDEA
+
+Selecciona "Open" o "Open Project"
+
+Navega a la carpeta del proyecto y selecciónala
+
+Esperar a que cargue
+
+IntelliJ detectará que es un proyecto Maven
+
+Descargará automáticamente las dependencias
+
+Ejecutar la aplicación
+
+En el panel de proyectos, ve a: src/main/java/org.idat.Biblioteca/BibliotecaApplication.java
+
+Haz clic derecho sobre la clase BibliotecaApplication
+
+Selecciona "Run BibliotecaApplication"
+
 Permite:
 
 Registrar e iniciar sesión de usuarios.
@@ -55,7 +79,7 @@ Postman
 Configuración de Base de Datos
 (application.properties)
 
-pring.datasource.url=jdbc:oracle:thin:@localhost:1521/XEPDB1
+spring.datasource.url=jdbc:oracle:thin:@localhost:1521/XEPDB1
 spring.datasource.username=biblioteca
 spring.datasource.password=biblioteca123
 spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
@@ -97,16 +121,6 @@ GET /prestamos
 GET /prestamos/misprestamos
 PUT /prestamos/devolver
 DELETE /prestamos/{id}
-
-Instalación y Ejecución
-
-Clonar repositorio
-
-Compilar
-mvn clean install
-
-Ejecutar
-BibliotecaApplication.java
 
 Configuracion de Oracle SQL developer
 
@@ -164,5 +178,3 @@ COMMIT;
 Link de Documentacion de EndPoints Swagger
 
 http://localhost:8080/api/swagger-ui/swagger-ui/index.html#/
-
-
