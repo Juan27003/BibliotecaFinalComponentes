@@ -79,7 +79,7 @@ Postman
 Configuración de Base de Datos
 (application.properties)
 
-pring.datasource.url=jdbc:oracle:thin:@localhost:1521/XEPDB1
+spring.datasource.url=jdbc:oracle:thin:@localhost:1521/XEPDB1
 spring.datasource.username=biblioteca
 spring.datasource.password=biblioteca123
 spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
